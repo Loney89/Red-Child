@@ -1,3 +1,3 @@
 <?php
 
-include_once('www/index.php');
+require_once('/www/index.php');
