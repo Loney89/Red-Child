@@ -5,6 +5,20 @@ We'll be using a few tools to do this, but first you'll need Composer and PHP at
 
 Then pull down this repo and use the Compser install/update from command line in that directory. Do not include the vendor directory into this repo.
 
+#Folder structure
+.
++-- app
+|   +-- Stuff like that holds configuration for application
++-- src
+|   +-- Contains our sources
++-- tests
+|   +-- Not entirely sure
++-- www
+|   +-- Main directory
++-- index.php
++-- composer.json
++-- .htacess
+
 Used currently:
 
 #Silex
