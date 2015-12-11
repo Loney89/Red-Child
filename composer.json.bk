@@ -1,0 +1,10 @@
+{
+    "require": { 
+        "monolog/monolog": "1.0.*",
+        "silex/silex":"1.*",
+        "guzzle/guzzle":"3.9.*",
+        "twig/twig":"1.*",
+        "doctrine/orm":"*",  
+        "components/jquery":"*",    
+    }
+}

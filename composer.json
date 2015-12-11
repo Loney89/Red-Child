@@ -1,10 +1,16 @@
 {
-    "require": { 
-        "monolog/monolog": "1.0.*",
-        "silex/silex":"1.*",
-        "guzzle/guzzle":"3.9.*",
-        "twig/twig":"1.*",
-        "doctrine/orm":"*",  
-        "components/jquery":"*",    
+    "name": "loney89/red-child",
+    "authors": [
+        {
+            "name": "Adam Nicholls",
+            "email": "inkysplat@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.3",
+        "monolog/monolog": "~1.17",
+        "guzzlehttp/guzzle": "~6.1",
+        "twig/twig": "~1.23",
+        "doctrine/dbal": "~2.5"
     }
 }
