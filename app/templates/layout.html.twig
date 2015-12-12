@@ -1,14 +1,39 @@
 <html>
   <head>
     <title>Red Child</title>
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/darkly/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha256-IsefKVCcMUlgpXQgIMRsqbIqC6aP153JkybxTa7W7/8= sha512-mCNEsmR1i3vWAq8hnHfbCCpc6V5fP9t0N1fEZ1wgEPF/IKteFOYZ2uk7ApzMXkT71sDJ00f9+rVMyMyBFwsaQg=="
-      crossorigin="anonymous">
+    {% block stylesheet %}
+    {% endblock %}
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+    <div class="container">
+      
+      <section class="header">
+        {% block heading %}
+        {% endblock %}
+      </section>
+
+      <div class="row">
+        {% block subheading %}
+        {% endblock %}
+        <div class="five columns">
+          {% block blurb %}
+          {% endblock %}
+        </div>
+        <div class="five columns">
+          {% block blurb2 %}
+          {% endblock %}
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="ten columns">
+          <input class="u-full-width" type="text" placeholder="Summoner Name">
+        </div>
+        <div class="one column">
+          <input class="button-primary" type="button" value="Submit">
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>

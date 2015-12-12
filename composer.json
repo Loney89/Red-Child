@@ -2,8 +2,14 @@
     "name": "loney89/red-child",
     "authors": [
         {
+            "name": "Simon Nicholls",
+            "email": "simonnicholls89@gmail.com",
+            "role": "padawan"
+        },
+        {
             "name": "Adam Nicholls",
-            "email": "inkysplat@gmail.com"
+            "email": "inkysplat@gmail.com",
+            "role": "jedi"
         }
     ],
     "require": {
@@ -11,6 +17,7 @@
         "monolog/monolog": "~1.17",
         "guzzlehttp/guzzle": "~6.1",
         "twig/twig": "~1.23",
+        "symfony/twig-bridge": "2.1.*",
         "doctrine/dbal": "~2.5"
     }
 }

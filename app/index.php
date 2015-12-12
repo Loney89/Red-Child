@@ -6,33 +6,31 @@
 require_once __DIR__.'/../vendor/autoload.php';
 require_once __DIR__.'/config.php';
 
-date_default_timezone_set('UTC');
-
 /**
  * Fixes notice that newer PHP versions throw
  */
 date_default_timezone_set('UTC');
 
-/**
- * Load up Twig so we can build templates and render them
- * http://twig.sensiolabs.org/doc/api.html
- */
-Twig_Autoloader::register();
-
-$loader = new Twig_Loader_Filesystem(__DIR__.'/templates');
-$twig = new Twig_Environment($loader, array(
-    'cache' => __DIR__.'/cache',
-));
 
 /**
  * Load up Silex Application for Routing.
  */
 $app = new Silex\Application();
 
-$app->get('/', function() use($twig) {
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+	'twig.path' => __DIR__.'/templates',
+	'twig.cache' => __DIR__.'/cache'
+));
+
+
+$app['debug'] = true;
+
+$app->get('/', function() use($app) {
 	// we have to have use($twig) here so Twig is available in the scope of this Closure.
-	return $twig->loadTemplate('index.html.twig')->render(['name' => 'simon']);
+	return $app['twig']->render('index.html.twig');
 });
+
+$app['css_path'] = __DIR__.'/../public/css';
 
 /**
  * Setting up Guzzle to be used to Query the LoL API
