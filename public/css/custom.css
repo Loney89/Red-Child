@@ -1,0 +1,49 @@
+/*
+* Custom CSS that may over-ride some skeleton theme stuff
+*/
+
+/** For top of the page **/
+.container > .header {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+/*
+* NavBar CSS
+*/
+.navbar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 4.5rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-list {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item {
+    display: inline;
+    padding: 0 1rem;
+    font-size: 2.6rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #00bddb;
+}
+
+/** Blog Specific Container **/
+#home_container {
+    width: 90%;
+    padding: 0 5.5rem;
+}
+
+/** Blog Specific Container **/
+#blog_container {
+    width: 90%;
+    padding: 0 5.5rem;
+}
