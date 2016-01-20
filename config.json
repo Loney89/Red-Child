@@ -2,7 +2,8 @@
   "api":
   {
     "key":"7b65e867-2351-4cd8-9f14-ab4eb882d8e9",
-    "url":"https://euw.api.pvp.net/api/"
+    "url":"https://euw.api.pvp.net/api/lol/",
+    "static":"https://global.api.pvp.net/api/lol/static-data/"
   },
 
   "database":

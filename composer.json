@@ -35,8 +35,11 @@
             "RedChild\\Api\\Lib\\":"api/lib/",
             "RedChild\\Api\\Lib\\Db\\":"api/lib/db/",
             "RedChild\\Api\\Controller\\":"api/controller/",
-            "RedChild\\Model\\":"model/",
-            "RedChild\\Model\\ViewModel\\":"model/viewmodel",
+            "RedChild\\Api\\Controller\\League\\":"api/controller/league/",
+            "RedChild\\Gateway\\":"gateway/",
+            "RedChild\\Gateway\\League\\":"gateway/league/",
+            "RedChild\\Gateway\\ViewGateway\\":"gateway/viewmodel/",
+            "RedChild\\Gateway\\ViewGateway\\League\\":"gateway/viewmodel/league/",
             "RedChild\\Public\\":"public/",
             "RedChild\\Tests\\":"tests/"
         }

@@ -33,6 +33,7 @@ class AppConfig
         //Api
         $app['api.league.key'] = $config->api->key;
         $app['api.league.url'] = $config->api->url;
+        $app['api.league.static'] = $config->api->static;
 
         //Logs directory
         $app['logs.location'] = ROOT.'../logs';
